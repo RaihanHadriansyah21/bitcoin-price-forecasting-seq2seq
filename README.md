@@ -1,69 +1,123 @@
-# Bitcoin Price Forecasting using Seq2Seq LSTM and TensorFlow
+# ₿ Bitcoin Price Forecasting using Seq2Seq LSTM and TensorFlow
 
-## Overview
-This project focuses on Bitcoin price forecasting using Deep Learning approaches with Seq2Seq LSTM architectures and TensorFlow.
+## 📌 Overview
+This project focuses on Bitcoin price forecasting using Deep Learning approaches with Seq2Seq LSTM architecture and TensorFlow.
 
-The project explores multivariate time series forecasting by utilizing historical Bitcoin market data and technical indicators to predict future price movements.
-
-This repository covers the complete forecasting workflow including:
-- Data preprocessing
-- Time series analysis
-- Feature engineering
-- Statistical analysis
-- Deep Learning model development
-- Seq2Seq forecasting
-- Model evaluation
-- Forecast visualization
-
----
-
-## Features
-- Bitcoin multivariate time series forecasting
-- Baseline LSTM model implementation
-- Seq2Seq LSTM forecasting architecture
-- Feature engineering using technical indicators
-- Time series decomposition analysis
-- ACF & PACF statistical analysis
-- Forecast visualization and inference comparison
-- TensorFlow/Keras implementation
-
----
-
-## Dataset
-The dataset contains historical Bitcoin market data including:
-- Close price
-- Trading volume
+The model was developed to perform multivariate time series forecasting by utilizing historical Bitcoin market data along with several technical indicators such as:
 - RSI (Relative Strength Index)
 - MACD Histogram
+- Trading Volume
+- Closing Price
 
-The dataset is used for multivariate forecasting experiments and sequence modeling.
+In addition to building forecasting models, this project also explores statistical time series analysis to better understand temporal patterns before the training process.
 
 ---
 
-## Model Architecture
+## 🚀 Project Highlights
+✅ Multivariate Time Series Forecasting  
+✅ Baseline LSTM & Seq2Seq LSTM Architecture  
+✅ Encoder-Decoder Sequence Learning  
+✅ Time Series Decomposition Analysis  
+✅ ACF & PACF Statistical Analysis  
+✅ Forecast Visualization & Inference  
+✅ TensorFlow / Keras Implementation  
+✅ Multi-step Future Prediction  
+
+---
+
+## 🧠 Model Architecture
 
 ### Baseline Model
-- Standard LSTM forecasting model
+The initial model uses a standard LSTM architecture as the forecasting baseline.
 
-### Advanced Model
-- Seq2Seq LSTM Architecture
-- Encoder-Decoder sequence learning
-- Multi-step forecasting approach
+### Seq2Seq LSTM Model
+The primary model implements:
+- Encoder-Decoder Architecture
+- Sequence-to-Sequence Learning
+- Multi-step Forecasting
 
----
-
-## Technologies & Libraries
-- Python
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Statsmodels
+This approach enables the model to learn complex temporal sequence patterns from Bitcoin price data.
 
 ---
 
-## Project Structure
+## 📊 Dataset
+The dataset contains historical Bitcoin market data and technical indicators used for forecasting experiments, including:
+- Close Price
+- Volume USDT
+- RSI
+- MACD Histogram
+
+The dataset is utilized for:
+- sequence modeling
+- feature engineering
+- forecasting experiments
+- statistical analysis
+
+---
+
+# 📈 Exploratory & Statistical Analysis
+
+## 🔥 Correlation Heatmap
+Feature correlation visualization used to analyze relationships between variables in the time series dataset.
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+---
+
+## 📉 Time Series Decomposition
+Decomposition analysis was performed to separate:
+- Trend
+- Seasonal Patterns
+- Residual Components
+
+This approach helps identify temporal characteristics before the forecasting process.
+
+![Decomposition Analysis](images/decomposition_analysis.png)
+
+---
+
+## 📌 ACF & PACF Analysis
+ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) analysis were conducted to examine lag dependencies and autocorrelation behavior within the dataset.
+
+![ACF PACF Analysis](images/acf_pacf_analysis.png)
+
+---
+
+# 🤖 Forecasting Result
+
+## Actual vs Predicted Bitcoin Price
+Visualization comparing Seq2Seq LSTM forecasting results with actual Bitcoin price values in a multi-step forecasting scenario.
+
+![Inference Seq2Seq](images/inference_seq2seq.png)
+
+---
+
+## 📋 Key Learning Outcomes
+Through this project, several important Deep Learning and Time Series concepts were explored, including:
+- Sequence Modeling using LSTM
+- Encoder-Decoder Architecture
+- Multivariate Forecasting
+- Statistical Time Series Analysis
+- Deep Learning Workflow for Sequential Data
+- Forecast Evaluation & Visualization
+- TensorFlow-based Forecasting Pipeline
+
+---
+
+# 🛠️ Technologies & Libraries
+
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| Deep Learning | TensorFlow, Keras |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib |
+| Statistical Analysis | Statsmodels |
+| Machine Learning Utilities | Scikit-learn |
+
+---
+
+# 📂 Project Structure
 
 ```bash
 bitcoin-price-forecasting-seq2seq/
@@ -96,63 +150,50 @@ bitcoin-price-forecasting-seq2seq/
 
 ---
 
-## Time Series Analysis
+# ⚙️ Installation
 
-### Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
+Clone the repository:
 
----
+```bash
+git clone https://github.com/YOUR_USERNAME/bitcoin-price-forecasting-seq2seq.git
+```
 
-### Time Series Decomposition
-![Decomposition Analysis](images/decomposition_analysis.png)
+Install dependencies:
 
----
-
-### ACF & PACF Analysis
-![ACF PACF Analysis](images/acf_pacf_analysis.png)
-
----
-
-## Forecasting Inference
-
-### Actual vs Predicted Bitcoin Price
-![Inference Seq2Seq](images/inference_seq2seq.png)
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## Model Evaluation
-The project evaluates forecasting performance using:
-- Sequence prediction comparison
-- Actual vs predicted visualization
-- Time series pattern analysis
-- Residual analysis
+# ▶️ Run Project
+
+Open the following notebook using:
+- Google Colab
+- Jupyter Notebook
+
+```bash
+notebook/bitcoin_forecasting_seq2seq.ipynb
+```
 
 ---
 
-## Key Learning Outcomes
-Through this project, several important concepts were explored:
-- Sequence modeling using LSTM
-- Encoder-decoder forecasting architecture
-- Multivariate time series forecasting
-- Statistical time series analysis
-- Feature engineering for forecasting
-- Deep Learning workflow for sequential data
+# 🔮 Future Improvements
+Potential future improvements for this project include:
+- Transformer-based Forecasting
+- Attention Mechanisms
+- Real-time Cryptocurrency API Integration
+- Web-based Forecast Dashboard
+- Probabilistic Forecasting
+- Hyperparameter Optimization
 
 ---
 
-## Future Improvements
-- Experiment with Transformer-based forecasting models
-- Add attention mechanisms
-- Improve forecasting horizon
-- Deploy forecasting model into web applications
-- Integrate real-time cryptocurrency API data
-- Explore probabilistic forecasting methods
+# 👨‍💻 Author
 
----
-
-## Author
-**Mohammad Raihan Hadriansyah Prasetya**
-
+**Mohammad Raihan Hadriansyah Prasetya**  
 Telecommunication Engineering Student  
 AI & Machine Learning Enthusiast
 
+---
+⭐ If you find this repository useful, feel free to give it a star.
